@@ -70,7 +70,8 @@ Additional Libraries:
 - [Priyanka Pandharbale](https://github.com/priyankap0101)
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
+ See the [LICENSE](./LICENSE) file for details.
 
 ## Support
 If you encounter any issues or have questions about Movie Explorer, please [open an issue](https://github.com/priyankap0101/movie-spot/issues) on GitHub.
