@@ -12,6 +12,7 @@ const FilterControls = ({
   onCountryChange,
   onGenreChange,
 }) => {
+  // State to manage label shrink
   const [labelShrunk, setLabelShrunk] = useState({
     language: false,
     country: false,
@@ -30,10 +31,8 @@ const FilterControls = ({
       <FormControl variant="outlined" style={{ width: '100%' }}>
         <InputLabel
           htmlFor="language"
-          className={`text-xl font-bold ${
-            labelShrunk.language ? 'text-white' : 'text-yellow-400'
-          }`}
-          style={{ paddingTop: 0 }} // Remove top padding
+          className="text-xl font-bold"
+          shrink={false} // Set shrink to false
         >
           Language
         </InputLabel>
@@ -44,9 +43,8 @@ const FilterControls = ({
             onLanguageChange(e.target.value);
             handleShrink('language');
           }}
-          label="Language"
           className="w-full text-gray-900"
-          style={{ backgroundColor: '#FEEBC8' }} // Remove borderColor
+          style={{ backgroundColor: '#FEEBC8' }}
           MenuProps={{ PaperProps: { style: { backgroundColor: '#FEEBC8' } } }}
         >
           <MenuItem value="">All</MenuItem>
@@ -60,10 +58,8 @@ const FilterControls = ({
       <FormControl variant="outlined" style={{ width: '100%' }}>
         <InputLabel
           htmlFor="country"
-          className={`text-xl font-bold ${
-            labelShrunk.country ? 'text-white' : 'text-yellow-400'
-          }`}
-          style={{ paddingTop: 0 }} // Remove top padding
+          className="text-xl font-bold"
+          shrink={false} // Set shrink to false
         >
           Country
         </InputLabel>
@@ -74,9 +70,8 @@ const FilterControls = ({
             onCountryChange(e.target.value);
             handleShrink('country');
           }}
-          label="Country"
           className="w-full text-gray-900"
-          style={{ backgroundColor: '#FEEBC8' }} // Remove borderColor
+          style={{ backgroundColor: '#FEEBC8' }}
           MenuProps={{ PaperProps: { style: { backgroundColor: '#FEEBC8' } } }}
         >
           <MenuItem value="">All</MenuItem>
@@ -90,10 +85,8 @@ const FilterControls = ({
       <FormControl variant="outlined" style={{ width: '100%' }}>
         <InputLabel
           htmlFor="genre"
-          className={`text-xl font-bold ${
-            labelShrunk.genre ? 'text-white' : 'text-yellow-400'
-          }`}
-          style={{ paddingTop: 0 }} // Remove top padding
+          className="text-xl font-bold"
+          shrink={false} // Set shrink to false
         >
           Genre
         </InputLabel>
@@ -104,9 +97,8 @@ const FilterControls = ({
             onGenreChange(e.target.value);
             handleShrink('genre');
           }}
-          label="Genre"
           className="w-full text-gray-900"
-          style={{ backgroundColor: '#FEEBC8' }} // Remove borderColor
+          style={{ backgroundColor: '#FEEBC8' }}
           MenuProps={{ PaperProps: { style: { backgroundColor: '#FEEBC8' } } }}
         >
           <MenuItem value="">All</MenuItem>

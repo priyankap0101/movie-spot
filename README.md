@@ -76,3 +76,7 @@ This project is licensed under the MIT License.
 ## Support
 If you encounter any issues or have questions about Movie Explorer, please [open an issue](https://github.com/priyankap0101/movie-spot/issues) on GitHub.
 
+## Deployed Link
+
+- **Check out the live website at https://moviespot1.netlify.app/**
+
